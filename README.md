@@ -43,3 +43,18 @@ data using GraphQL.
   }
 }
 ```
+
+## GraphQL Type ID and Authors.
+
+1. We can look up for objects by using its ID: `GraphQLID`.
+2. Repeat the same process creating an Author Objcet.
+3. To declare an integer in GraphQL, we define: `GraphQLInt`.
+
+```
+{
+  book(id: "1"){
+    id,
+    name
+  }
+}
+```
