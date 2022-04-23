@@ -131,9 +131,16 @@ Mutations allow us to insert, update or delete our data sin our database. We con
 
 ```
 mutation{
-  add_author(name: "Jorge Ortiz", age: 25){
+  add_book(name: "The Outliers", genre: "Entreprenurship", author_id: "6264498e48c1f7be7df96f9d"){
     name,
-    age
+    genre,
+    author{
+      name
+    }
   }
 }
 ```
+
+## Step 10. Mutations (part 2).
+
+We added mutations to books as well.
