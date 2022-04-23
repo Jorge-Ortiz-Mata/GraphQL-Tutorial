@@ -10,7 +10,8 @@ const {
   GraphQLSchema,
   GraphQLID,
   GraphQLInt,
-  GraphQLList
+  GraphQLList,
+  GraphQLNonNull
  } = graphql;
 
 // Function that creates the Book table and its fields.
@@ -98,8 +99,8 @@ const Mutation = new GraphQLObjectType({
     add_author: {
       type: AuthorType,
       args: {
-        name: { type: GraphQLString },
-        age: { type: GraphQLInt }
+        name: { type: new GraphQLNonNull (GraphQLString) },
+        age: { type: new GraphQLNonNull (GraphQLInt) }
       },
       resolve(parent, args){
         let author = new Author({
@@ -113,9 +114,9 @@ const Mutation = new GraphQLObjectType({
     add_book: {
       type: BookType,
       args: {
-        name: { type: GraphQLString },
-        genre: { type: GraphQLString },
-        author_id: { type: GraphQLString }
+        name: { type: new GraphQLNonNull(GraphQLString) },
+        genre: { type:new GraphQLNonNull (GraphQLString) },
+        author_id: { type:new GraphQLNonNull (GraphQLString) }
       },
       resolve(parent, args){
         let book = new Book({

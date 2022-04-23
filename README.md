@@ -161,3 +161,9 @@ query{
   }
 }
 ```
+
+## Step 12. Validations.
+
+We can add validations to each field in order to store all the data needed.
+
+1. Add GraphQLNonNull and place it in the add or create method
