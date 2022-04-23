@@ -59,7 +59,9 @@ data using GraphQL.
 }
 ```
 
-## Step 04. Associtations.
+## Step 04. Associtations belongs-to author.
+
+This section applies for the Book object.
 
 1. Add a new column to each book and asign them the author id.
 2. Add the code in BookType function.
@@ -74,4 +76,37 @@ data using GraphQL.
     }
   }
 }
+```
+
+## Step 05. Associtations has-many books.
+
+This section applies to Author object.
+
+1. We define a list object for the author: `GraphQLList`.
+2. We add the method within author function.
+
+```
+{
+  author(id: 2){
+    name,
+    books{
+      id,
+      name
+    }
+  }
+}
+```
+
+## Step 06. Get all books and authors.
+
+1. Add the methods into the RootQuery function.
+
+```
+
+{
+  authors{
+    name
+  }
+}
+
 ```
