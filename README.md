@@ -27,7 +27,7 @@ data using GraphQL.
 5. Type the command: `npm install nodemon -g`
 6. Type the command: `nodemon app`
 
-## Setting GraphQL.
+## Step 02. Setting GraphQL.
 
 1. Type the command: `npm install graphql express-graphql` in project root.
 2. Type the command: `npm install -g lodash`.
@@ -44,7 +44,7 @@ data using GraphQL.
 }
 ```
 
-## GraphQL Type ID and Authors.
+## Step 03. GraphQL Type ID and Authors.
 
 1. We can look up for objects by using its ID: `GraphQLID`.
 2. Repeat the same process creating an Author Objcet.
@@ -55,6 +55,23 @@ data using GraphQL.
   book(id: "1"){
     id,
     name
+  }
+}
+```
+
+## Step 04. Associtations.
+
+1. Add a new column to each book and asign them the author id.
+2. Add the code in BookType function.
+
+```
+{
+  book(id: 1){
+    id,
+    name
+    author{
+      name
+    }
   }
 }
 ```
