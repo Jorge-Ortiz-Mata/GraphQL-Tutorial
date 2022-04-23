@@ -167,3 +167,11 @@ query{
 We can add validations to each field in order to store all the data needed.
 
 1. Add GraphQLNonNull and place it in the add or create method
+
+## Step 13. Installing React.
+
+1. Open a new tab with server running, and type: `npm install create-react-app -g`.
+2. Create the React app in the server folder: `create-react-app client`.
+3. Go to client folder by cmd ant type: `npm start` and it'll open the browser.
+
+Some files were deleted in order to make the web application simpler.
