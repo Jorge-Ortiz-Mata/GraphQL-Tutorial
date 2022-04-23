@@ -110,3 +110,9 @@ This section applies to Author object.
 }
 
 ```
+## Step 07. Adding Mongo DB.
+
+1. Sign in for a free account in Mongo DB.
+2. Create a database and a cluster by free.
+3. Wait until the database is ready and copy the link connection.
+4. Within app.js file, add the constant and the code in order to connect to the database.
