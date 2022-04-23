@@ -102,13 +102,11 @@ This section applies to Author object.
 1. Add the methods into the RootQuery function.
 
 ```
-
 {
   authors{
     name
   }
 }
-
 ```
 ## Step 07. Adding Mongo DB.
 
@@ -124,3 +122,18 @@ This section applies to Author object.
 3. Create a file for authors: **author.js**
 4. Add the code in each file (book.js and author.js);
 5. The changes were to comment the returns lines because we don't need the arrays objects anymore and we import the files at the top of the file.
+
+## Step 09. Mutations.
+
+Mutations allow us to insert, update or delete our data sin our database. We configure the Schema with Mongo DB, so we need to insert some data.
+
+1. Adding the method Mutation at the bottom of the file and add a new module.exports
+
+```
+mutation{
+  add_author(name: "Jorge Ortiz", age: 25){
+    name,
+    age
+  }
+}
+```

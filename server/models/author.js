@@ -8,4 +8,4 @@ const authorSchema = new Schema({
 });
 
 // We are acreating a model to get all the collection of Authors.
-module.exports = mongoose.model('Author', bookSchema);
+module.exports = mongoose.model('Author', authorSchema);
