@@ -116,3 +116,11 @@ This section applies to Author object.
 2. Create a database and a cluster by free.
 3. Wait until the database is ready and copy the link connection.
 4. Within app.js file, add the constant and the code in order to connect to the database.
+
+## Step 08. Mongoose models.
+
+1. Create a folder called: **models**.
+2. Create a file for books: **book.js**
+3. Create a file for authors: **author.js**
+4. Add the code in each file (book.js and author.js);
+5. The changes were to comment the returns lines because we don't need the arrays objects anymore and we import the files at the top of the file.
