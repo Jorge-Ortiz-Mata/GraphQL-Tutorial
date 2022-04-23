@@ -144,3 +144,20 @@ mutation{
 ## Step 10. Mutations (part 2).
 
 We added mutations to books as well.
+
+## Step 11. Get all books and authors.
+
+In this section we add few lines in order to get all books and authors by the query command.
+Also, we added the list and collection to get the associations between these two models.
+
+```
+query{
+  books{
+    name
+    author {
+      id,
+      name
+    }
+  }
+}
+```
