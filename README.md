@@ -175,3 +175,8 @@ We can add validations to each field in order to store all the data needed.
 3. Go to client folder by cmd ant type: `npm start` and it'll open the browser.
 
 Some files were deleted in order to make the web application simpler.
+
+## Step 14. Listing books.
+
+1. Create a file in client/src/components/BookList.js
+2. Render files among them.
