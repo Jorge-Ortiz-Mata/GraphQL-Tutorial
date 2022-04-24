@@ -2,8 +2,10 @@ const express = require('express');
 const gqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const app = express();
 
+app.use(cors());
 // The username and the password are declared when the database is created.
 mongoose.connect('mongodb+srv://jorge123:jorge.123@graphql-course.c42zz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 mongoose.connection.once('open', () => {

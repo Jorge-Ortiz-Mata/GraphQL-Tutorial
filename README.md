@@ -180,3 +180,8 @@ Some files were deleted in order to make the web application simpler.
 
 1. Create a file in client/src/components/BookList.js
 2. Render files among them.
+
+## Step 15. Implementing a GraphQL Client - Apollo.
+
+1. Inside of the folder client, install Apollo by typing: `npm install apollo-boost react-apollo graphql --save`.
+2. In App.js file, import ApolloClient.
